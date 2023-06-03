@@ -12,12 +12,17 @@ export class MapCoordinate {
     /**
      * First coordinate.
      */
-    lattitude: string = '';
+    lattitude: string;
 
     /**
      * Second coordinate.
      */
-    longitue: string = '';
+    longitue: string;
+
+    constructor(lattitude: string, longitude: string) {
+        this.lattitude = lattitude;
+        this.longitue = longitude;
+    }
 
     /**
      * Get format ready for using in Google Maps.
