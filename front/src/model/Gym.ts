@@ -8,14 +8,9 @@ import { MapCoordinate } from "./MapCoordinate";
 export class Gym {
 
     /**
-     * Display title for user.
+     * Name of gym.
      */
-    title: string;
-
-    /**
-     * String html link to image.
-     */
-    img: string;
+    name: string;
 
     /**
      * Aproximate month price in local currency.
@@ -33,11 +28,22 @@ export class Gym {
      */
     rating: number;
 
-    constructor(title: string, img: string, monthPrice: number, location: MapCoordinate, rating: number) {
-        this.title = title;
-        this.img = img;
-        this.monthPrice = monthPrice;
-        this.location = location;
-        this.rating = rating;
+    /**
+     * Types of google map entity.
+     */
+    types: string[];
+
+    constructor(parameters: {name: string, monthPrice: number, location: MapCoordinate, rating: number, types: string[]}) {
+        this.name = parameters.name;
+        this.monthPrice = parameters.monthPrice;
+        this.location = parameters.location;
+        this.rating = parameters.rating;
+        this.types = parameters.types;
+    }
+
+    static deserialize(response: any) {
+        const location = MapCoordinate.deserialize(response.geometry.location);
+        const rawGym = {name: response.name, monthPrice: response.monthPrice, rating: response.rating, location, types: response.types};
+        return new Gym(rawGym);
     }
 }

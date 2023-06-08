@@ -14,6 +14,7 @@ export function Table() {
     const gymService = new GymService();
 
     const loadGyms = async () => {
+
         const gyms = await gymService.getGymList();
         setGyms(gyms);
     };
