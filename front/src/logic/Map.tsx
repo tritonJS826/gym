@@ -9,7 +9,7 @@ import { GymService } from '../service/GymService';
  */
 export function Map() {
 
-    const [gyms, setGyms] = useState<Gym[]>([]);
+    const [, setGyms] = useState<Gym[]>([]);
 
     const gymService = new GymService();
 
