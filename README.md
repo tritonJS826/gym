@@ -4,4 +4,4 @@ Gym aggregator
 
 package manager: pnpm
 
-preview (auto deploy): https://gym-h4bs.onrender.com/
+preview (wait for ~3 minutes of initial start): https://gym-h4bs.onrender.com/
