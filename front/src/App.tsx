@@ -1,5 +1,6 @@
 import "./App.css";
 import { Table } from "./logic/Table";
+import { Map } from "./logic/Map";
 import { MapCoordinate } from "./model/MapCoordinate";
 
 // tbilisi central coordinate
@@ -9,7 +10,8 @@ export function App() {
 
     return (
         <>
-            <Table/>
+            {/* <Table/> */}
+            <Map/>
         </>
     );
 }

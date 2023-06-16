@@ -37,6 +37,10 @@ export class MapCoordinate {
         return `${this.lattitude} ${this.longitude}`
     }
 
+    asArray(): [number, number] {
+      return [this.lattitude, this.longitude];
+    }
+
     static getDistanceBetweenLocationsInMeter(firstCoordinate: MapCoordinate, secondCoordinate: MapCoordinate) {
 
         function deg2rad(deg: number) {
