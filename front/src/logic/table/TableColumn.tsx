@@ -1,8 +1,8 @@
-import type { ColumnsType } from 'antd/es/table';
-import { Gym } from '../model/Gym';
 import { Tag } from 'antd';
-import { MapCoordinate } from '../model/MapCoordinate';
-import { userCoordinate } from '../App';
+import type { ColumnsType } from 'antd/es/table';
+import { userCoordinate } from '../../App';
+import { Gym } from '../../model/Gym';
+import { MapCoordinate } from '../../model/MapCoordinate';
 
 /**
  * Config for antd Table columns.

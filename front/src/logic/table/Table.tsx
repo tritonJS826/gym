@@ -1,7 +1,7 @@
 import { Table as AntTable } from 'antd';
 import { useEffect, useState } from 'react';
-import { Gym } from '../model/Gym';
-import { GymService } from '../service/GymService';
+import { Gym } from '../../model/Gym';
+import { GymService } from '../../service/GymService';
 import { columns } from './TableColumn';
 
 /**
