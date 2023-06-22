@@ -9,9 +9,9 @@ export const userCoordinate = new MapCoordinate({ lattitude: 41.72122247728544, 
 export function App() {
 
     return (
-        <>
-            {/* <Table/> */}
+        <div className="container">
+            <Table />
             <Map />
-        </>
+        </div>
     );
 }

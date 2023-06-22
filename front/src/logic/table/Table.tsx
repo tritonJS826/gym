@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Gym } from '../../model/Gym';
 import { GymService } from '../../service/GymService';
 import { columns } from './TableColumn';
+import './Table.css';
 
 /**
  * Table widget with gyms
@@ -24,6 +25,6 @@ export function Table() {
     }, []);
 
     return (
-        <AntTable columns={columns} dataSource={gyms} />
+        <AntTable pagination={{ pageSize: 6 }} columns={columns} dataSource={gyms} />
     )
 } 
