@@ -5,4 +5,5 @@ Gym aggregator
 package manager: pnpm
 
 deploy 1 - https://tbilisi-gym.netlify.app/
+
 deploy 2 (wait for ~3 minutes of initial start) - https://gym-h4bs.onrender.com/
