@@ -4,4 +4,5 @@ Gym aggregator
 
 package manager: pnpm
 
-preview (wait for ~3 minutes of initial start): https://gym-h4bs.onrender.com/
+deploy 1 - https://tbilisi-gym.netlify.app/
+deploy 2 (wait for ~3 minutes of initial start) - https://gym-h4bs.onrender.com/
