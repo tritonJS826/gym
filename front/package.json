@@ -11,27 +11,28 @@
     "serve": "pnpm dlx serve dist -s"
   },
   "dependencies": {
-    "antd": "^5.5.2",
-    "leaflet": "^1.9.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1"
+    "antd": "5.5.2",
+    "leaflet": "1.9.4",
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-leaflet": "4.2.1"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.3",
-    "@types/node": "^20.2.5",
-    "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.59.8",
-    "@vitejs/plugin-react": "^4.0.0",
-    "eslint": "^8.41.0",
-    "eslint-config-standard-with-typescript": "^35.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.32.2",
-    "typescript": "^5.1.3",
-    "vite": "^4.3.9",
-    "vite-tsconfig-paths": "^4.2.0"
+    "@types/leaflet": "1.9.3",
+    "@types/node": "20.2.5",
+    "@types/react": "18.0.37",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "5.59.8",
+    "@vitejs/plugin-react": "4.0.0",
+    "eslint": "8.41.0",
+    "eslint-config-standard-with-typescript": "35.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "15.7.0",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.32.2",
+    "typescript": "5.1.3",
+    "vite": "4.3.9",
+    "vite-tsconfig-paths": "4.2.0"
   }
 }
