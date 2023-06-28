@@ -1,3 +1,4 @@
+import { GymResponse } from "../service/GymResponse";
 import { MapCoordinate } from "./MapCoordinate";
 
 /**
@@ -9,7 +10,7 @@ export class Gym {
   /**
    * Unique identifier.
    */
-  id: string;
+  key: string;
 
   /**
    * Name of gym.
@@ -38,14 +39,14 @@ export class Gym {
   types: string[];
 
   constructor(parameters: {
-    id: string;
+    key: string;
     name: string;
     monthPrice: number;
     location: MapCoordinate;
     rating: number;
     types: string[];
   }) {
-    this.id = parameters.id;
+    this.key = parameters.key;
     this.name = parameters.name;
     this.monthPrice = parameters.monthPrice;
     this.location = parameters.location;
@@ -53,16 +54,20 @@ export class Gym {
     this.types = parameters.types;
   }
 
-  static deserialize(response: any) {
+  static deserialize(response: GymResponse) {
     const location = MapCoordinate.deserialize(response.geometry.location);
     const rawGym = {
-      id: response.place_id,
+      key: response.place_id,
       name: response.name,
-      monthPrice: response.monthPrice,
+      monthPrice: response.month_price,
       rating: response.rating,
       location,
       types: response.types,
     };
     return new Gym(rawGym);
+  }
+
+  static serialize(gym: Gym) {
+    return JSON.stringify(gym);
   }
 }
